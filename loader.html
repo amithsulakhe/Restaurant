@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loader</title>
+    <style>
+        body{
+            margin: 35% auto;
+            background-color: rgb(248 113 113);
+        }
+        div{
+            width: 15px;
+            height: 15px;
+            background:linear-gradient(90deg,red, blue);
+            display: inline-block;
+            position: absolute;
+            animation: 3.5s move infinite cubic-bezier(.2,.64,.81,.23);
+            border-radius: 50%;
+        }
+        div:nth-child(1){
+            animation-delay: 150ms;
+        }
+        div:nth-child(2){
+            animation-delay: 300ms;
+        }
+        div:nth-child(3){
+            animation-delay: 450ms;
+        }
+        @keyframes move{
+            0%{left: 0;}
+            100%{left: 100%;}
+        }
+    </style>
+</head>
+<body>
+   <div></div> 
+   <div></div> 
+   <div></div> 
+</body>
+<script>
+//     const amith= async ()=>{
+// await fetch("https://restrajesh.herokuapp.com/?format=json")
+// .then((res)=>res.json()).then((resdata)=>{
+//     console.log(resdata)
+// })
+//     }
+//     amith()
+</script>
+</html>

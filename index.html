@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reasurent</title>
+    <script
+      src="https://kit.fontawesome.com/8774629e76.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./index.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./input.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <script>
+      window.onload=()=>{
+        document.querySelector(".loaders").style.display="none"
+        document.querySelector(".main_context").style.display="block"
+      }
+    </script>
+    <style>
+      .loaders{
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="loaders">
+      <img src="./images/loader.gif" alt="">
+    </div>
+    <div class="main_context">
+
+    <div class="nav">
+      <nav class="nav_bar flex items-center justify-between">
+        <div class="nav_col1">
+          <a class="text-lg font-medium" href="">Food</a>
+          <i class="fa-solid fa-bars" id="bars"></i>
+        </div>
+        <div class="nav_col2">
+          <ul>
+            <li>
+              <a href="">Home</a>
+            </li>
+            <li>
+                <a href="#speciality">Speciality</a>
+            </li>
+            <li>
+              <a href="#Popular">Popular</a>
+            </li>
+            <li> <a href="#Gallery">Gallery</a></li>
+            <li> <a href="#Order">Order</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="row flex items-center">
+      <div class="col1" style="padding: 55px">
+        <h1>Food Made With Love</h1>
+        <p style="margin-bottom: 2%; color: rgb(100 116 139)">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+          pariatur hic distinctio veniam aut facere corporis reiciendis
+          perspiciatis non illo. Sequi eos ut aspernatur architecto laudantium
+          repudiandae quasi, aperiam autem.
+        </p>
+      <a href="./search.html"><button class="mybtn text-red-500">Explore Now</button></a>
+      </div>
+      <img id="img" src="./images/home-img.png" alt="" />
+    </div>
+    <div id="speciality" class="row2">
+      <h1 style="text-align: center">
+        our <span class="text-red-600">Special</span> Dishes
+      </h1>
+      <div class="dishes" id="dish">
+        <div class="content" id="content1">
+          <img src="./images/s-1.png" alt="" />
+          <h1>Tasty Burger</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi
+            voluptatibus inventore veritatis, qui aliquam nulla deleniti ex
+            numquam quasi. Asperiores?
+          </p>
+        </div>
+        <div class="content" id="content2">
+          <img src="./images/s-2.png" alt="" />
+          <h1>Tasty Pizza</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi
+            voluptatibus inventore veritatis, qui aliquam nulla deleniti ex
+            numquam quasi. Asperiores?
+          </p>
+        </div>
+        <div class="content" id="content3">
+          <img src="./images/s-3.png" alt="" />
+          <h1>Cold Ice-Cream</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi
+            voluptatibus inventore veritatis, qui aliquam nulla deleniti ex
+            numquam quasi. Asperiores?
+          </p>
+        </div>
+        <div class="content" id="content4">
+          <img src="./images/s-4.png" alt="" />
+          <h1>Cold Drinks</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi
+            voluptatibus inventore veritatis, qui aliquam nulla deleniti ex
+            numquam quasi. Asperiores?
+          </p>
+        </div>
+        <div class="content" id="content5">
+          <img src="./images/s-5.png" alt="" />
+          <h1>Tasty Sweets</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi
+            voluptatibus inventore veritatis, qui aliquam nulla deleniti ex
+            numquam quasi. Asperiores?
+          </p>
+        </div>
+        <div class="content" id="content6">
+          <img src="./images/s-6.png" alt="" />
+          <h1>Healty Breakfast</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi
+            voluptatibus inventore veritatis, qui aliquam nulla deleniti ex
+            numquam quasi. Asperiores?
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id="Popular" style="margin-top: -5%; text-align: center;  padding-bottom: 1%;" class="row3">
+      <h2>Most <span class="text-red-500">Popular</span>Foods</h2>
+      <div class="foods">
+      </div>
+    </div>
+    <div  class="row4">
+      <h2 style="text-align: center">
+        How It <span class="text-red-600">Works</span>
+      </h2>
+      <div class="methods">
+        <div class="method">
+          <img src="./images/step-1.jpg" alt="">
+          <h1>Choose Your Favorite Food</h1>
+                </div>
+                <div class="method">
+                  <img src="./images/step-2.jpg" alt="">
+                  <h1>Free And Fast Delivery</h1>
+                </div>
+                <div class="method">
+                  <img src="./images/step-3.jpg" alt="">
+                  <h1>Easy Payment Methods</h1>
+                </div>
+                <div class="method">
+                  <img src="./images/step-4.jpg" alt="">
+                  <h1>And Finally,Enjoy Your Food</h1>
+                </div>
+              </div>
+      </div>
+<div id="Gallery" class="row5">
+  <h2>Our Food <span class="text-red-600">Gallery</span></h2>
+  <div class="gallery">
+    <div class="gallerys" style="background-image: url(./images/g-1.jpg);">
+      <div class="galleryss">
+        <h2>Tasty Food</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam, cumque!
+        </p>
+        <button class="mybtn text-red-500">Order Now</button>
+      </div>
+
+    </div>
+    <div class="gallerys"  style="background-image: url(./images/g-2.jpg);">
+      <div class="galleryss">
+        <h2>Tasty Food</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam, cumque!
+        </p>
+        <button class="mybtn text-red-500">Order Now</button>
+      </div>
+    </div>
+    
+    <div class="gallerys"  style="background-image: url(./images/g-3.jpg);">
+      <div class="galleryss">
+        <h2>Tasty Food</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam, cumque!
+        </p>
+        <button class="mybtn text-red-500">Order Now</button>
+      </div>
+    </div>
+    <div class="gallerys"  style="background-image: url(./images/g-4.jpg);">
+      <div class="galleryss">
+        <h2>Tasty Food</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam, cumque!
+        </p>
+        <button class="mybtn text-red-500">Order Now</button>
+      </div>
+    </div>
+    <div class="gallerys"  style="background-image: url(./images/g-5.jpg);">
+      <div class="galleryss">
+        <h2>Tasty Food</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam, cumque!
+        </p>
+        <button class="mybtn text-red-500">Order Now</button>
+      </div>
+    </div>
+    <div class="gallerys"  style="background-image: url(./images/g-6.jpg);">
+      <div class="galleryss">
+        <h2>Tasty Food</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam, cumque!
+        </p>
+        <button class="mybtn text-red-500">Order Now</button>
+      </div>
+    </div>
+    <div class="gallerys"  style="background-image: url(./images/g-7.jpg);">
+      <div class="galleryss">
+        <h2>Tasty Food</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam, cumque!
+        </p>
+        <button class="mybtn text-red-500">Order Now</button>
+      </div>
+    </div>
+    <div class="gallerys"  style="background-image: url(./images/g-8.jpg);">
+      <div class="galleryss">
+        <h2>Tasty Food</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam, cumque!
+        </p>
+        <button class="mybtn text-red-500">Order Now</button>
+      </div>
+    </div>
+    <div class="gallerys"  style="background-image: url(./images/g-9.jpg);">
+      <div class="galleryss">
+        <h2>Tasty Food</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam, cumque!
+        </p>
+        <button class="mybtn text-red-500">Order Now</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="Order" class="row6" style="    margin-top: -2%;">
+  <h2><span class="text-red-400"> Order</span>Now</h2>
+  <div class="main">
+    <div class="img1">
+      <img style="    margin: 2%;" src="./images/order-img.jpg" alt="">
+    </div>
+    <div class="cll1">
+      <div class="cl1">
+  <input type="text" placeholder="name">
+      </div>
+      <div class="cl1">
+        <input type="text" placeholder="email">
+  
+      </div>
+      <div class="cl1">
+        <input type="text" placeholder="number">
+  
+      </div>
+      <div class="cl1">
+        <input type="text" placeholder="foodname">
+  
+      </div>
+      <div class="cl1" id="fl">
+  <textarea style="  border: 1px solid; border-radius: 4px;  height: 125%;    width: 203%;" name="" id="" cols="30" rows="10" placeholder="address"></textarea>
+  <button class="mybtn text-red-500">Order Now</button>
+      </div>
+    </div>
+    </div>
+  </div>
+
+</div>
+</div>
+
+  </body>
+  <script src="./index.js">
+
+  </script>
+</html>
