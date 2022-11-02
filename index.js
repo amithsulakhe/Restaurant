@@ -23,7 +23,12 @@ function myfunction() {
     nav.classList.remove("sticky");
   }
 }
-let data = fetch("https://restrajesh.herokuapp.com/?format=json");
+let data=fetch("https://secret-shore-09422.herokuapp.com/https://restrajesh.herokuapp.com",{
+  method: 'GET',
+  headers: {
+    "Content-type":"application/json; charset=UTF-8",
+    "Access-Control-Allow-Origin":"*",},
+})
 data
   .then((res) => res.json())
   .then((data) => {

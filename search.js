@@ -32,9 +32,14 @@ search.addEventListener("click", (e) => {
   search.disabled = true;
   fetch_url(search_name);
 });
-async function  scrollcontent() {
-  await fetch("https://restrajesh.herokuapp.com/?format=json")
-    .then((res) => {
+ function  scrollcontent() {
+  let url_=fetch("https://secret-shore-09422.herokuapp.com/https://restrajesh.herokuapp.com",{
+  method: 'GET',
+  headers: {
+    "Content-type":"application/json; charset=UTF-8",
+    "Access-Control-Allow-Origin":"*",},
+})
+    url_.then((res) => {
       return res.json();
     })
     .then((contents) => {
@@ -55,7 +60,12 @@ function myFunction(ele) {
   fetch_url(ele.innerText);
 }
 function fetch_url(search_name) {
-  let datafetch = fetch(`https://restrajesh.herokuapp.com/?format=json`);
+  let datafetch=fetch("https://secret-shore-09422.herokuapp.com/https://restrajesh.herokuapp.com",{
+    method: 'GET',
+    headers: {
+      "Content-type":"application/json; charset=UTF-8",
+      "Access-Control-Allow-Origin":"*",},
+  })
   datafetch
     .then((response) => {
       return response.json();
@@ -166,7 +176,12 @@ pri.addEventListener("click", () => {
   pri.classList.remove("pric");
 });
 function Between(thisele) {
-  fetch(`https://restrajesh.herokuapp.com/?format=json`)
+  fetch("https://secret-shore-09422.herokuapp.com/https://restrajesh.herokuapp.com",{
+    method: 'GET',
+    headers: {
+      "Content-type":"application/json; charset=UTF-8",
+      "Access-Control-Allow-Origin":"*",},
+  })
     .then((res) => res.json())
     .then((data) => {
       let arr3 = [];
@@ -185,7 +200,12 @@ function rates(){
   document.querySelector(".rating").classList.toggle("ratted");
 }
 function Betweens(thisele) {
-  fetch(`https://restrajesh.herokuapp.com/?format=json`)
+  fetch("https://secret-shore-09422.herokuapp.com/https://restrajesh.herokuapp.com",{
+    method: 'GET',
+    headers: {
+      "Content-type":"application/json; charset=UTF-8",
+      "Access-Control-Allow-Origin":"*",},
+  })
     .then((res) => res.json())
     .then((datass) => {
       let ar = [];
